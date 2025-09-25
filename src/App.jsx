@@ -32,9 +32,6 @@ function Layout() {
           <Link to="/contact" className="header-link">
             Contact
           </Link>
-          <Link to={`/wrong-${Math.random()}`} className="header-link">
-            Error
-          </Link>
         </div>
       </header>
       {/* 이곳에 Outlet을 할당하세요. */}
