@@ -1,7 +1,6 @@
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link, Outlet } from "react-router-dom";
 import "./App.css";
 import headerStyle from "./assets/styles/header.module.css";
-import { BrowserRouter, Routes, Route, Link, Outlet } from "react-router-dom";
 /* Layout 컴포넌트
 1. 모든 <Link/> 요소의 클래스명은 "header-link" 입니다.
 2. /home으로 라우팅할 수 있는 <Link/>를 선언하세요.
