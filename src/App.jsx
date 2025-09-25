@@ -1,6 +1,11 @@
 import { BrowserRouter, Routes, Route, Link, Outlet } from "react-router-dom";
 import "./App.css";
 import headerStyle from "./assets/styles/header.module.css";
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
+import ErrorPage from "./pages/ErrorPage";
+
 /* Layout 컴포넌트
 1. 모든 <Link/> 요소의 클래스명은 "header-link" 입니다.
 2. /home으로 라우팅할 수 있는 <Link/>를 선언하세요.
@@ -10,21 +15,6 @@ import headerStyle from "./assets/styles/header.module.css";
 5-1. 아무 경로를 할당하거나, Math.random()을 활용할 수 있습니다.
 6. Layout 컴포넌트는 "모든" 컴포넌트에서 보여야 합니다. <Outlet/>를 추가하세요.
 */
-function HomePage() {
-  return <div>Home Page</div>;
-}
-
-function AboutPage() {
-  return <div>About Page</div>;
-}
-
-function ContactPage() {
-  return <div>Contact Page</div>;
-}
-
-function ErrorPage() {
-  return <div>잘못된 경로입니다.</div>;
-}
 
 function Layout() {
   return (
